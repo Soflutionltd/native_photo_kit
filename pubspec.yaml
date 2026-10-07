@@ -1,0 +1,34 @@
+name: native_photo_kit
+description: "Native photo pipeline: JPEG encoding from raw RGBA, EXIF-aware resizing, cover crop and blurred-background feed format, on ImageIO, Core Image and BitmapFactory."
+version: 0.1.0
+homepage: https://github.com/Soflutionltd/native_photo_kit
+repository: https://github.com/Soflutionltd/native_photo_kit
+issue_tracker: https://github.com/Soflutionltd/native_photo_kit/issues
+topics:
+  - image
+  - jpeg
+  - image-processing
+  - performance
+  - heic
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.soflution.native_photo_kit
+        pluginClass: NativePhotoKitPlugin
+      ios:
+        pluginClass: NativePhotoKitPlugin
